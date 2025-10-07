@@ -10,6 +10,7 @@ import Highlights from "./components/Highlights";
 import HowItWorks from "./components/HowItWorks";
 import Model from "./components/Model";
 import Navbar from "./components/Navbar";
+import * as Sentry from '@sentry/react';
 
 
 // function App() {
@@ -62,6 +63,7 @@ import Navbar from "./components/Navbar";
 
 // export default App
 function App(){
+  
   return (
     <>
     <main>
@@ -76,4 +78,6 @@ function App(){
   );
 
 }
-export default App
+
+export default Sentry.withProfiler(App);
+// export default App
