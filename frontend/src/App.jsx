@@ -5,6 +5,7 @@
 // import GsapTime from './GsapTime';
 
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Highlights from "./components/Highlights";
 import HowItWorks from "./components/HowItWorks";
@@ -72,7 +73,8 @@ function App(){
       <Highlights/>
       <Model/>
       <Features/>
-      {/* <HowItWorks/> */}
+      <HowItWorks/>
+      <Footer/>
       </main>
     </>
   );
